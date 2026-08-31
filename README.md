@@ -148,6 +148,16 @@ If you already have this site on your computer with your own files added to
 2. Open the new `assets/` folder and copy its files into your existing one,
    choosing "merge" or "keep both" if asked. Your flyers stay put.
 
+## A note on the archived flyers
+
+Two 2024 PDFs and one 2025 image originally printed an organizer's personal
+email address. Those have been redacted: the PDFs were flattened to images with
+the contact line painted out, so no selectable text remains, and the line was
+painted out of the JPEG.
+
+If you add older material, check it for personal contact details before
+committing — anything in this repo is public and gets crawled.
+
 ## Flyers
 
 Thirteen flyers are already in `assets/` and linked from `flyers.html`, renamed
@@ -174,7 +184,14 @@ Add `L`, `M`, `Q` or `H` as a third argument to set error correction. `Q` is
 the default and the right choice for print — it survives folding, rain and
 being photographed at an angle. `H` is tougher still but makes a denser code.
 
-`assets/qr-whatsapp.svg` is already generated and points at the WhatsApp group.
+Two are already generated, each as SVG (for print) and PNG (for tools that
+won't take an SVG):
+
+- `assets/qr-whatsapp.*` -> the WhatsApp group. Address-independent, so it keeps
+  working even if the site moves. **This is the one to put on flyers.**
+- `assets/qr-site.*` -> https://sondzus.github.io/BikeBusOgden/ . If you ever
+  buy a domain or rename the repo, this one stops working and any printed copies
+  are dead. Regenerate it after any URL change.
 Because it encodes the WhatsApp invite rather than a website, it keeps working
 no matter where the site is hosted.
 
