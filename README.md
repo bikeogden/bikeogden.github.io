@@ -208,6 +208,32 @@ stylesheet so the embed stays responsive on phones — the comment shows how to
 use it. There's also a note on linking an iCal feed if you'd rather people
 subscribe than look at a grid.
 
+## The printable flyer
+
+Three versions of the same one-page Letter flyer:
+
+- `flyer-ogden-bike-bus.pdf` — send this to school or print it. Vector text,
+  sharp at any size.
+- `flyer-ogden-bike-bus.png` — 1700x2200, for pasting into an email body or a
+  newsletter that won't take a PDF.
+- `flyer-print.html` — edit the wording here, then print from the browser.
+  Turn on "Background graphics" or the green bar won't show.
+
+To rebuild the PDF and PNG after changing times or text, edit `tools/make_flyer.py`
+and run it from that folder:
+
+```
+cd tools && python3 make_flyer.py
+```
+
+It needs `reportlab` and `pypdfium2`.
+
+It pulls the two QR codes and the owl from `assets/`, so it always matches the
+site. Edit the times or wording directly in the file.
+
+**If the site URL ever changes, regenerate `assets/qr-site.png` and `.svg`** —
+see the QR section above. The WhatsApp code never needs regenerating.
+
 ## Structure
 
 ```

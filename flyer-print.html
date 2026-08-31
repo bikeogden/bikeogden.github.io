@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ogden Bike Bus — printable flyer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  :root{
+    --ink:#14213D; --ink-soft:#4A5578; --paper:#FBFAF7;
+    --lane:#007A3D; --sky:#41B6E6; --signal:#F2C230; --rule:#DFDCD3;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#e9e7e1;
+    font-family:"Public Sans",Helvetica,Arial,sans-serif;
+    color:var(--ink);
+  }
+  .sheet{
+    width:8.5in; height:11in;
+    margin:0 auto; background:var(--paper);
+    padding:0.62in 0.68in 0.5in;
+    display:flex; flex-direction:column;
+  }
+  .topbar{height:12px;background:var(--lane);margin:-0.62in -0.68in 0.42in;}
+
+  .head{text-align:center}
+  .head img{width:82px;height:auto;display:block;margin:0 auto 8px}
+  h1{
+    font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+    font-weight:800; font-size:52px; line-height:1;
+    letter-spacing:-.025em; margin:0 0 4px;
+  }
+  .school{font-size:14.5px;color:var(--ink-soft);margin:0 0 26px}
+
+  .call{
+    font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+    font-weight:700; font-size:31px; line-height:1.12;
+    letter-spacing:-.015em; margin:0 0 10px; text-align:center;
+  }
+  .when{
+    font-size:16.5px; line-height:1.45; color:var(--ink-soft);
+    max-width:5.4in; margin:0 auto 26px; text-align:center;
+  }
+
+  /* ---- schedule strip ---- */
+  .sched{
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    padding:16px 0 14px; margin-bottom:24px;
+  }
+  .sched h2{
+    font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+    font-weight:700; font-size:17px; margin:0 0 10px; text-align:center;
+  }
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  td{padding:3px 0}
+  td.t{
+    font-variant-numeric:tabular-nums; font-weight:600;
+    width:1.05in; white-space:nowrap;
+  }
+  td.p{color:var(--ink)}
+  tr.last td{font-weight:600}
+  .jenner{
+    margin:12px 0 0; font-size:14px; color:var(--ink-soft); text-align:center;
+  }
+
+  /* ---- QR block ---- */
+  .codes{display:flex;gap:0.5in;justify-content:center;margin:6px 0 0}
+  .code{text-align:center;width:2.5in}
+  .code img{width:2.1in;height:2.1in;display:block;margin:0 auto 9px}
+  .code .label{
+    font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+    font-weight:700;font-size:16px;margin:0 0 3px;
+  }
+  .code .sub{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.35}
+
+  .foot{
+    margin-top:auto; padding-top:18px; border-top:1px solid var(--rule);
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-size:12.5px; color:var(--ink-soft);
+  }
+  .foot strong{color:var(--ink);font-weight:600}
+
+  /* screen-only helper, hidden when printing */
+  .hint{
+    max-width:8.5in;margin:16px auto 24px;padding:12px 16px;
+    background:#fff;border-left:5px solid var(--signal);
+    font-size:14px;line-height:1.5;color:#333;
+  }
+  @media print{ .hint{display:none} body{background:#fff} }
+</style>
+</head>
+<body>
+
+<div class="hint">
+  <strong>To print:</strong> File → Print, choose Letter, set margins to None or Default,
+  and turn on “Print backgrounds” (Chrome: More settings → Background graphics).
+  Save as PDF to email it. Edit the text directly in this file if anything changes.
+</div>
+
+<div class="sheet">
+  <div class="topbar"></div>
+
+  <div class="head">
+    <img src="assets/owl.svg" alt="">
+    <h1>Ogden Bike Bus</h1>
+    <p class="school">The Ogden International School of Chicago · East and Jenner campuses</p>
+  </div>
+
+  <p class="call">Come ride to school with us!</p>
+  <p class="when">
+    We ride every Friday school is open, in almost any weather.
+    Bikes, scooters and trailers all welcome — and there’s music.
+    Adults ride at the front, the back and every turn.
+  </p>
+
+  <div class="sched">
+    <h2>Friday route</h2>
+    <table>
+      <tr><td class="t">8:00am</td><td class="p">Kingsbury &amp; Illinois — by the East Bank Club</td></tr>
+      <tr><td class="t">8:04am</td><td class="p">Kingsbury &amp; Erie</td></tr>
+      <tr><td class="t">8:06am</td><td class="p">Erie &amp; Orleans</td></tr>
+      <tr><td class="t">8:09am</td><td class="p">Erie &amp; Wells</td></tr>
+      <tr><td class="t">8:13am</td><td class="p">Erie &amp; Dearborn — riders from the east join here</td></tr>
+      <tr><td class="t">8:16am</td><td class="p">Dearborn &amp; Chicago</td></tr>
+      <tr class="last"><td class="t">8:20am</td><td class="p">Ogden East Campus</td></tr>
+    </table>
+    <p class="jenner">Middle schoolers carry on to Jenner, leaving East Campus 8:30 and arriving 8:40.</p>
+  </div>
+
+  <div class="codes">
+    <div class="code">
+      <img src="assets/qr-whatsapp.png" alt="QR code to join the parent riders WhatsApp group">
+      <p class="label">Parent riders group</p>
+      <p class="sub">Weather calls, route changes<br>and day-of updates on WhatsApp</p>
+    </div>
+    <div class="code">
+      <img src="assets/qr-site.png" alt="QR code to the Ogden Bike Bus website">
+      <p class="label">Route, times &amp; FAQs</p>
+      <p class="sub">Maps, rules, what to expect<br>bikeogden.github.io</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span><strong>Never done this before?</strong> Just turn up at any stop. No sign-up.</span>
+    <span>bikeogden.github.io</span>
+  </div>
+</div>
+
+</body>
+</html>
