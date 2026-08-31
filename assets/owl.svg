@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 124" role="img" aria-label="An owl wearing a bike helmet">
+  <!-- body -->
+  <ellipse cx="60" cy="76" rx="35" ry="37" fill="#14213D"/>
+  <!-- belly -->
+  <path d="M60 58 a20 26 0 0 1 0 52 a20 26 0 0 1 0 -52z" fill="#1E2E52"/>
+  <!-- wings -->
+  <path d="M25 70 q-7 22 6 36 q7 -18 5 -34z" fill="#1E2E52"/>
+  <path d="M95 70 q7 22 -6 36 q-7 -18 -5 -34z" fill="#1E2E52"/>
+  <!-- feet -->
+  <g fill="#F2C230">
+    <path d="M48 110 l0 8 M44 118 l8 0" stroke="#F2C230" stroke-width="5" stroke-linecap="round"/>
+    <path d="M72 110 l0 8 M68 118 l8 0" stroke="#F2C230" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- eyes -->
+  <circle cx="46" cy="66" r="14" fill="#FBFAF7"/>
+  <circle cx="74" cy="66" r="14" fill="#FBFAF7"/>
+  <circle cx="48" cy="67" r="6.5" fill="#14213D"/>
+  <circle cx="72" cy="67" r="6.5" fill="#14213D"/>
+  <circle cx="50" cy="64" r="2.2" fill="#FBFAF7"/>
+  <circle cx="74" cy="64" r="2.2" fill="#FBFAF7"/>
+  <!-- beak -->
+  <path d="M60 72 l-6 10 l12 0z" fill="#F2C230"/>
+  <!-- helmet -->
+  <path d="M22 56 a38 36 0 0 1 76 0 l0 4 l-76 0z" fill="#007A3D"/>
+  <path d="M22 56 l76 0 l0 6 l-76 0z" fill="#00612F"/>
+  <g stroke="#00612F" stroke-width="4" stroke-linecap="round">
+    <path d="M44 30 l-4 20"/>
+    <path d="M60 26 l0 22"/>
+    <path d="M76 30 l4 20"/>
+  </g>
+  <!-- chin strap -->
+  <path d="M27 60 q4 20 19 26" fill="none" stroke="#00612F" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M93 60 q-4 20 -19 26" fill="none" stroke="#00612F" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

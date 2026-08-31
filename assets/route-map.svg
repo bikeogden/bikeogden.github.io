@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 1080" role="img" aria-labelledby="mt md">
+  <title id="mt">Ogden Bike Bus route</title>
+  <desc id="md">The route starts at Kingsbury and Illinois by the East Bank Club at 8:00, runs north up Kingsbury to Erie at 8:04, then east along Erie past Orleans at 8:06, Wells at 8:09 and Dearborn at 8:13, then north up Dearborn past Chicago Avenue at 8:16 to the Ogden East Campus at Walton at 8:20.</desc>
+
+  <rect width="1220" height="1080" fill="#FBFAF7"/>
+
+  <g transform="translate(60,74)">
+
+    <g stroke="#E3E0D8" stroke-width="7" stroke-linecap="round">
+      <line x1="400" y1="0" x2="400" y2="940"/>
+      <line x1="700" y1="0" x2="700" y2="940"/>
+      <line x1="800" y1="0" x2="800" y2="940"/>
+      <line x1="1000" y1="0" x2="1000" y2="940"/>
+      <line x1="240" y1="120" x2="1006" y2="120"/>
+      <line x1="240" y1="200" x2="1006" y2="200"/>
+      <line x1="240" y1="260" x2="1006" y2="260"/>
+      <line x1="180" y1="456" x2="1006" y2="456"/>
+      <line x1="160" y1="520" x2="1006" y2="520"/>
+      <line x1="118" y1="720" x2="1006" y2="720"/>
+      <line x1="150" y1="860" x2="1006" y2="860"/>
+    </g>
+
+    <g stroke="#D2CEC3" stroke-width="11" stroke-linecap="round">
+      <line x1="320" y1="0" x2="320" y2="940"/>
+      <line x1="600" y1="0" x2="600" y2="940"/>
+      <line x1="920" y1="0" x2="920" y2="940"/>
+      <line x1="110" y1="604" x2="1006" y2="604"/>
+      <line x1="240" y1="320" x2="1006" y2="320"/>
+      <line x1="240" y1="56" x2="1006" y2="56"/>
+      <line x1="170" y1="920" x2="1006" y2="920"/>
+    </g>
+
+    <line x1="238" y1="1000" x2="60" y2="290" stroke="#D2CEC3" stroke-width="11" stroke-linecap="round"/>
+
+    <polyline points="200,920 120,604 920,604 920,56 952,56"
+              fill="none" stroke="#007A3D" stroke-width="15"
+              stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g fill="#FBFAF7">
+      <path d="M152 780 l4 -17 12 11 z"/>
+      <path d="M480 596 l16 8 -16 8 z"/>
+      <path d="M760 596 l16 8 -16 8 z"/>
+      <path d="M912 452 l8 -16 8 16 z"/>
+      <path d="M912 196 l8 -16 8 16 z"/>
+    </g>
+
+    <g>
+      <rect x="936" y="34" width="34" height="30" rx="3" fill="#14213D"/>
+      <path d="M936 34 l17 -13 17 13 z" fill="#14213D"/>
+      <rect x="945" y="46" width="7" height="12" fill="#FBFAF7"/>
+      <rect x="956" y="46" width="7" height="7" fill="#FBFAF7"/>
+    </g>
+
+    <g>
+      <circle cx="200" cy="920" r="15" fill="#FBFAF7" stroke="#007A3D" stroke-width="7"/>
+      <circle cx="120" cy="604" r="13" fill="#FBFAF7" stroke="#007A3D" stroke-width="7"/>
+      <circle cx="320" cy="604" r="13" fill="#FBFAF7" stroke="#007A3D" stroke-width="7"/>
+      <circle cx="600" cy="604" r="13" fill="#FBFAF7" stroke="#007A3D" stroke-width="7"/>
+      <circle cx="920" cy="604" r="16" fill="#41B6E6" stroke="#FBFAF7" stroke-width="5"/>
+      <circle cx="920" cy="320" r="13" fill="#FBFAF7" stroke="#007A3D" stroke-width="7"/>
+    </g>
+
+    <g font-family="Public Sans, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" fill="#14213D">
+      <text x="224" y="928" text-anchor="start">8:00</text>
+      <text x="104" y="578" text-anchor="end">8:04</text>
+      <text x="320" y="662" text-anchor="middle">8:06</text>
+      <text x="600" y="662" text-anchor="middle">8:09</text>
+      <text x="900" y="668" text-anchor="end">8:13</text>
+      <text x="900" y="313" text-anchor="end">8:16</text>
+      <text x="926" y="18" text-anchor="middle">8:20</text>
+    </g>
+
+    <text x="224" y="954" text-anchor="start"
+          font-family="Public Sans, Helvetica, Arial, sans-serif"
+          font-size="18" fill="#4A5578">by the East Bank Club</text>
+
+    <g font-family="Public Sans, Helvetica, Arial, sans-serif" font-size="19" fill="#4A5578">
+      <text x="320" y="-24" text-anchor="middle" font-weight="600" fill="#14213D">Orleans</text>
+      <text x="400" y="-24" text-anchor="middle">Franklin</text>
+      <text x="600" y="-24" text-anchor="middle" font-weight="600" fill="#14213D">Wells</text>
+      <text x="700" y="-24" text-anchor="middle">LaSalle</text>
+      <text x="800" y="-24" text-anchor="middle">Clark</text>
+      <text x="920" y="-24" text-anchor="middle" font-weight="600" fill="#14213D">Dearborn</text>
+      <text x="1000" y="-24" text-anchor="middle">State</text>
+    </g>
+
+    <text x="104" y="690" text-anchor="end"
+          font-family="Public Sans, Helvetica, Arial, sans-serif"
+          font-size="19" font-weight="600" fill="#14213D">Kingsbury</text>
+
+    <g font-family="Public Sans, Helvetica, Arial, sans-serif" font-size="19" fill="#4A5578">
+      <text x="1018" y="62" font-weight="600" fill="#14213D">Walton</text>
+      <text x="1018" y="126">Delaware</text>
+      <text x="1018" y="206">Chestnut</text>
+      <text x="1018" y="266">Pearson</text>
+      <text x="1018" y="326" font-weight="600" fill="#14213D">Chicago</text>
+      <text x="1018" y="462">Superior</text>
+      <text x="1018" y="526">Huron</text>
+      <text x="1018" y="610" font-weight="600" fill="#14213D">Erie</text>
+      <text x="1018" y="726">Ohio</text>
+      <text x="1018" y="866">Grand</text>
+      <text x="1018" y="926" font-weight="600" fill="#14213D">Illinois</text>
+    </g>
+
+    <text x="900" y="-52" text-anchor="end"
+          font-family="Public Sans, Helvetica, Arial, sans-serif"
+          font-size="21" font-weight="700" fill="#14213D">Ogden East Campus</text>
+
+    <g transform="translate(60,80)">
+      <path d="M0 30 L0 -6" stroke="#4A5578" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M0 -14 l7 14 -14 0 z" fill="#4A5578"/>
+      <text x="0" y="50" text-anchor="middle"
+            font-family="Public Sans, Helvetica, Arial, sans-serif"
+            font-size="17" font-weight="700" fill="#4A5578">N</text>
+    </g>
+
+    <g font-family="Public Sans, Helvetica, Arial, sans-serif" font-size="18" fill="#4A5578">
+      <circle cx="400" cy="994" r="9" fill="#41B6E6"/>
+      <text x="418" y="1000">Riders from the east join here</text>
+    </g>
+
+  </g>
+</svg>

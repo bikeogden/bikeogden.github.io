@@ -1,0 +1,190 @@
+:root{
+  --ink:#14213D;
+  --ink-soft:#4A5578;
+  --paper:#FBFAF7;
+  --lane:#007A3D;
+  --sky:#41B6E6;
+  --signal:#F2C230;
+  --rule:#DFDCD3;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:17px;
+  line-height:1.55;
+}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--lane)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+/* ---------- nav ---------- */
+.topbar{border-top:5px solid var(--lane);border-bottom:1px solid var(--rule);background:#fff}
+.topbar .wrap{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;padding-top:.75rem;padding-bottom:.75rem}
+.brand img{width:30px;height:auto;display:block;flex:none}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.55rem;
+  font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+  font-weight:800;
+  font-size:1.05rem;
+  text-decoration:none;
+  color:var(--ink);
+  letter-spacing:-.01em;
+  margin-right:auto;
+}
+.topbar nav ul{display:flex;flex-wrap:wrap;gap:.15rem .95rem;list-style:none;margin:0;padding:0}
+.topbar nav a{color:var(--ink-soft);text-decoration:none;font-size:.95rem}
+.topbar nav a:hover,.topbar nav a[aria-current="page"]{color:var(--lane)}
+
+/* ---------- landing ---------- */
+.landing{text-align:center;padding:3.5rem 0 3rem}
+.landing .owl{width:96px;height:auto;display:block;margin:0 auto 1rem}
+.landing h1{
+  font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+  font-weight:800;
+  font-size:clamp(2.5rem,10vw,4rem);
+  line-height:1;
+  letter-spacing:-.025em;
+  margin:0 0 .2rem;
+}
+.landing p{margin-left:auto;margin-right:auto}
+.landing .school{
+  font-size:1rem;
+  color:var(--ink-soft);
+  margin:0 0 2.4rem;
+}
+.landing .call{
+  font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+  font-weight:700;
+  font-size:clamp(1.5rem,5.5vw,2.1rem);
+  line-height:1.15;
+  margin:0 0 .9rem;
+  letter-spacing:-.015em;
+}
+.landing .when{
+  font-size:1.15rem;
+  margin:0 auto 1.9rem;
+  max-width:28rem;
+  color:var(--ink-soft);
+}
+.cta{
+  display:inline-block;
+  background:var(--lane);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.05rem;
+  padding:.85rem 1.6rem;
+  border-radius:4px;
+}
+.cta:hover{background:#00612F}
+.cta:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.landing .after{margin:1.1rem 0 0;font-size:.98rem;color:var(--ink-soft)}
+.hero-img{width:100%;height:auto;display:block;border-radius:6px;margin:2.8rem 0 0}
+
+/* ---------- inner pages ---------- */
+main.page{padding:2.5rem 0 1rem}
+h2{
+  font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+  font-weight:800;
+  font-size:clamp(1.9rem,6vw,2.5rem);
+  letter-spacing:-.02em;
+  margin:0 0 1.4rem;
+  line-height:1.05;
+}
+h3{
+  font-family:"Bricolage Grotesque","Public Sans",sans-serif;
+  font-weight:700;
+  font-size:1.25rem;
+  margin:2rem 0 .55rem;
+}
+h3:first-of-type{margin-top:0}
+main.page p{margin:0 0 1rem;max-width:36rem}
+ul.plain{margin:0 0 1rem;padding-left:1.2rem;max-width:36rem}
+ul.plain li{margin-bottom:.4rem}
+.lede{font-size:1.12rem;color:var(--ink-soft);max-width:34rem}
+
+/* ---------- route timetable ---------- */
+ol.stops{list-style:none;margin:0 0 1.5rem;padding:0 0 0 1.9rem;position:relative}
+ol.stops::before{
+  content:"";position:absolute;left:.42rem;top:.75rem;bottom:.75rem;
+  width:4px;background:var(--lane);border-radius:2px;
+}
+ol.stops li{position:relative;display:flex;gap:.9rem;align-items:baseline;padding:.62rem 0}
+ol.stops li::before{
+  content:"";position:absolute;left:-1.72rem;top:1.05rem;
+  width:11px;height:11px;background:var(--paper);
+  border:3px solid var(--lane);border-radius:50%;
+}
+ol.stops li.join::before{background:var(--sky);border-color:var(--sky);width:15px;height:15px;left:-1.84rem}
+ol.stops li.school::before{background:var(--lane);width:17px;height:17px;left:-1.9rem}
+.time{font-variant-numeric:tabular-nums;font-weight:600;min-width:5.2rem;flex:none}
+.place small{display:block;color:var(--ink-soft);font-size:.9rem;line-height:1.4}
+li.school .place{font-weight:600}
+
+/* ---------- calendar embed (used once a feed is pasted in) ---------- */
+.calendar-embed{
+  position:relative;
+  width:100%;
+  aspect-ratio:4/3;
+  margin:1.4rem 0 0;
+  border:1px solid var(--rule);
+  border-radius:6px;
+  overflow:hidden;
+  background:#fff;
+}
+.calendar-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (min-width:40rem){ .calendar-embed{aspect-ratio:16/10} }
+
+/* ---------- photos ---------- */
+figure{margin:1.6rem 0 1.8rem}
+figure img{width:100%;height:auto;display:block;border-radius:6px}
+figcaption{
+  margin-top:.5rem;
+  font-size:.9rem;
+  color:var(--ink-soft);
+  max-width:36rem;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.4rem;
+  margin:1.6rem 0 0;
+}
+@media (min-width:34rem){
+  .grid{grid-template-columns:1fr 1fr}
+}
+.grid figure{margin:0}
+
+
+/* ---------- callout ---------- */
+.note{
+  border-left:5px solid var(--signal);
+  background:#fff;
+  padding:.9rem 1.1rem;
+  border-radius:0 6px 6px 0;
+  margin:0 0 1.5rem;
+}
+.note p{margin:0}
+
+/* ---------- footer ---------- */
+footer{
+  margin-top:3rem;
+  padding:1.8rem 0 3rem;
+  border-top:1px solid var(--rule);
+  color:var(--ink-soft);
+  font-size:.92rem;
+}
+footer p{margin:0 0 .5rem}
+footer ul{display:flex;flex-wrap:wrap;gap:.3rem 1rem;list-style:none;margin:0 0 .9rem;padding:0}
+footer a{color:var(--ink-soft)}
+
+@media (max-width:430px){
+  body{font-size:16px}
+  .time{min-width:4.6rem}
+}
